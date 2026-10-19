@@ -53,7 +53,7 @@
       .join("");
 
     return `<section class="concept-section">
-      <h2 class="content-heading">Concepts</h2>
+      <h2 class="content-heading">Char/Enviro Concepts</h2>
       <div class="concept-grid">${concepts}</div>
     </section>
     <section class="precedents-section">
@@ -82,7 +82,7 @@
         break;
       case "storyboard":
         content.innerHTML = `<section class="storyboard-section">
-          <h2 class="content-heading">Storyboard</h2>
+          <h2 class="content-heading">Pitched Storyboard</h2>
           <div class="storyboard-board">${page.frames.map((frame) => mediaMarkup(frame, "story-frame")).join("")}</div>
         </section>`;
         break;

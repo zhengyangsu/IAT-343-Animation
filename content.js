@@ -23,7 +23,7 @@ window.PROJECT_CONTENT = {
     },
 
     {
-      id: "concepts", figmaNode: "759:18", label: "Concepts", title: "Concepts", kind: "concepts",
+      id: "concepts", figmaNode: "759:18", label: "Char/Enviro Concepts", title: "Char/Enviro Concepts", kind: "concepts",
       concepts: [
         { title: "Floating Sentrybot", text: "Generic robot soldiers that exist to be beaten up by Voxer.", src: "assets/concepts/Floating_SentryBot.jpg", alt: "Concept sheet showing a white flying one-eyed drone and a red-and-white single-wheel sentrybot." },
         { title: "Voxer", text: "Heavy set robot proficient in hand-to-hand combat.", src: "assets/concepts/Voxer.jpg", alt: "Front view sketch of a broad-shouldered, gray bipedal robot with heavy armor." },
@@ -42,9 +42,9 @@ window.PROJECT_CONTENT = {
     },
     
     {
-      id: "storyboard", figmaNode: "48:117", label: "Storyboard", title: "Storyboard", kind: "storyboard",
+      id: "storyboard", figmaNode: "48:117", label: "Pitched Storyboard", title: "Pitched Storyboard", kind: "storyboard",
       frames: [
-        { src: "assets/storyboard/StoryBoard.png", alt: "Robot Heist storyboard sheet with a sequence of animatic frames, camera notes, and action descriptions.", description: "Storyboard sequence showing the heist, security-bot fights, and the final flash-drive mishap.", label: "Storyboard" }
+        { src: "assets/storyboard/StoryBoard.png", alt: "Robot Heist pitched storyboard sheet with a sequence of animatic frames, camera notes, and action descriptions.", description: "Pitched storyboard sequence showing the heist, security-bot fights, and the final flash-drive mishap.", label: "Pitched Storyboard" }
       ]
     },
     
@@ -54,9 +54,9 @@ window.PROJECT_CONTENT = {
       media: { src: "", alt: "", label: "Animatic preview" }
     },
     {
-      id: "renders", figmaNode: null, label: "Renders", title: "Renders", kind: "placeholder",
-      note: "Final renders in progress. Add rendered images or a video when they’re ready.",
-      media: { src: "", alt: "", label: "Render preview" }
+      id: "renders", figmaNode: null, label: "Final", title: "Final", kind: "placeholder",
+      note: "Final animation in progress. Add finished images or a video when they’re ready.",
+      media: { src: "", alt: "", label: "Final preview" }
     }
   ]
 };

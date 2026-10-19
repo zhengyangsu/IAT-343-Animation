@@ -45,7 +45,7 @@ a { color: inherit; }
 .project-info .synopsis { margin: 0 0 18px; max-width: 34ch; font-weight: 600; }
 .project-info h2 { margin: 16px 0 1px; font-size: 1em; font-weight: 600; }
 .project-info .team-name { margin-top: 16px; }
-.project-info ul { list-style: none; padding: 0; margin: 0; }
+.project-info .info-group ul { display: grid; grid-template-columns: max-content max-content; column-gap: 16px; list-style: none; padding: 0; margin: 0; }
 .page-content { min-width: 0; min-height: 0; height: 100%; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; scrollbar-color: var(--accent) var(--paper); scrollbar-width: auto; padding-right: 8px; }
 .page-content::-webkit-scrollbar { width: 16px; }
 .page-content::-webkit-scrollbar-track { background: var(--paper); }
@@ -114,6 +114,7 @@ a { color: inherit; }
   .project-info h1, .project-info .synopsis { grid-column: 1 / -1; }
   .project-info h1 { margin-bottom: 10px; }
   .project-info .synopsis { max-width: 65ch; }
+  .project-info .info-group { grid-column: 1 / -1; }
   .project-info h2 { margin-top: 8px; }
   .project-info .team-name { margin-top: 8px; }
   .hero-wrap { min-height: 260px; }

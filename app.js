@@ -35,10 +35,14 @@
     info.innerHTML = `
       <h1>${escapeHTML(data.project.title)}</h1>
       <p class="synopsis">${escapeHTML(data.project.synopsis)}</p>
-      <h2>Character models needed</h2>
-      <ul>${data.project.characters.map((item) => `<li>${escapeHTML(item)}</li>`).join("")}</ul>
-      <h2 class="team-name">${escapeHTML(data.project.teamName)}</h2>
-      <ul>${data.project.team.map((item) => `<li>${escapeHTML(item)}</li>`).join("")}</ul>`;
+      <section class="info-group">
+        <h2>Character models needed</h2>
+        <ul>${data.project.characters.map((item) => `<li>${escapeHTML(item)}</li>`).join("")}</ul>
+      </section>
+      <section class="info-group">
+        <h2 class="team-name">${escapeHTML(data.project.teamName)}</h2>
+        <ul>${data.project.team.map((item) => `<li>${escapeHTML(item)}</li>`).join("")}</ul>
+      </section>`;
   }
 
   function renderConcepts(page) {

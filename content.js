@@ -21,12 +21,7 @@ window.PROJECT_CONTENT = {
         "In a desperate final move, Irebot charges its energy cannon toward Linax’s terminal. Voxer grapples to deflect the barrel just as Linax triumphs, holding the freshly extracted data disk aloft in celebration. The stray blast misses Linax but obliterates the disk, making their struggle ultimately futile."
       ]
     },
-    {
-      id: "storyboard", figmaNode: "48:117", label: "Storyboard", title: "Storyboard", kind: "storyboard",
-      frames: [
-        { src: "assets/storyboard/StoryBoard.png", alt: "Robot Heist storyboard sheet with a sequence of animatic frames, camera notes, and action descriptions.", description: "Storyboard sequence showing the heist, security-bot fights, and the final flash-drive mishap.", label: "Storyboard" }
-      ]
-    },
+
     {
       id: "concepts", figmaNode: "759:18", label: "Concepts", title: "Concepts", kind: "concepts",
       concepts: [
@@ -45,6 +40,14 @@ window.PROJECT_CONTENT = {
         ]
       }
     },
+    
+    {
+      id: "storyboard", figmaNode: "48:117", label: "Storyboard", title: "Storyboard", kind: "storyboard",
+      frames: [
+        { src: "assets/storyboard/StoryBoard.png", alt: "Robot Heist storyboard sheet with a sequence of animatic frames, camera notes, and action descriptions.", description: "Storyboard sequence showing the heist, security-bot fights, and the final flash-drive mishap.", label: "Storyboard" }
+      ]
+    },
+    
     {
       id: "animatic", figmaNode: null, label: "Animatic", title: "Animatic", kind: "placeholder",
       note: "Animatic in progress. Add a video, sequence, or supporting notes when they’re ready.",

@@ -23,20 +23,26 @@ window.PROJECT_CONTENT = {
     },
     {
       id: "storyboard", figmaNode: "48:117", label: "Storyboard", title: "Storyboard", kind: "storyboard",
-      frames: Array.from({ length: 12 }, (_, i) => ({ src: "", alt: "", label: `Panel ${String(i + 1).padStart(2, "0")}` }))
+      frames: [
+        { src: "assets/storyboard/StoryBoard.png", alt: "Robot Heist storyboard sheet with a sequence of animatic frames, camera notes, and action descriptions.", description: "Storyboard sequence showing the heist, security-bot fights, and the final flash-drive mishap.", label: "Storyboard" }
+      ]
     },
     {
       id: "concepts", figmaNode: "759:18", label: "Concepts", title: "Concepts", kind: "concepts",
       concepts: [
-        { title: "Floating Sentrybot", text: "Generic robot soldiers that exist to be beaten up by Voxer.", src: "", alt: "" },
-        { title: "Voxer", text: "Heavy set robot proficient in hand-to-hand combat.", src: "", alt: "" },
-        { title: "Linax", text: "Nimble and youthful robot. The brain to Voxer’s brawn.", src: "", alt: "" },
-        { title: "Irebot", text: "An intimidating and deadly fighter. A suitable match for Voxer.", src: "", alt: "" },
-        { title: "Bipedal Sentrybot", text: "For this version, we imagined the setting would consist only of bipedal robots.", src: "", alt: "" }
+        { title: "Floating Sentrybot", text: "Generic robot soldiers that exist to be beaten up by Voxer.", src: "assets/concepts/Floating_SentryBot.jpg", alt: "Concept sheet showing a white flying one-eyed drone and a red-and-white single-wheel sentrybot." },
+        { title: "Voxer", text: "Heavy set robot proficient in hand-to-hand combat.", src: "assets/concepts/Voxer.jpg", alt: "Front view sketch of a broad-shouldered, gray bipedal robot with heavy armor." },
+        { title: "Linax", text: "Nimble and youthful robot. The brain to Voxer’s brawn.", src: "assets/concepts/Linax.jpg", alt: "Sketch of a slim white robot with green panels, a small screen, and pointed ear-like antennae." },
+        { title: "Irebot", text: "An intimidating and deadly fighter. A suitable match for Voxer.", src: "assets/concepts/Irebot.jpg", alt: "Sketch of a tall angular gray robot with a narrow red eye and blade-like armor." },
+        { title: "Bipedal Sentrybot", text: "For this version, we imagined the setting would consist only of bipedal robots.", src: "assets/concepts/Bipedal_SentryBot.jpg", alt: "Sketch of a slender bipedal security robot with an orange face panel and long limbs." }
       ],
       precedents: {
         citation: "Pennacchioli, G. (Director). (2019, March 15). Blind Spot (Season 1, Episode 15) [TV series episode]. In Love, Death & Robots. Netflix. https://www.imdb.com/title/tt9788512/",
-        images: Array.from({ length: 8 }, (_, i) => ({ src: "", alt: "", label: `Precedent ${String(i + 1).padStart(2, "0")}` }))
+        images: [
+          { src: "assets/references/MV5BMmFiYTk4ZWQtOGVjMC00M2JhLTg0MDQtMzgzZThlY2RjZTdiXkEyXkFqcGc@._V1_FMjpg_UX1920_.jpg", alt: "A blond, armored man with a cybernetic eye stands in a red-lit industrial room, backed by a large robot silhouette.", description: "A lone armored figure framed by the shadow of a much larger machine in a red-lit industrial space." },
+          { src: "assets/references/MV5BNThhM2NjNjgtODc3MC00MTQzLWFlNjUtMzJmNTE1MmZhOWY2XkEyXkFqcGc@._V1_FMjpg_UX1920_.jpg", alt: "An orange cylindrical robot lies on the floor of a burning workshop while another robot stands in the background.", description: "A damaged orange robot in the foreground, with a second figure amid fire and wreckage." },
+          { src: "assets/references/MV5BZTI1MjYxNWYtNjc2ZC00ODdiLWE3NzQtZWQ1NmE3Nzg3YzM3XkEyXkFqcGc@._V1_FMjpg_UX1773_.jpg", alt: "A blond armored fighter lunges forward and strikes a large dark robot against a blue night sky.", description: "A close-range action shot of an armored fighter attacking a larger robot." }
+        ]
       }
     },
     {

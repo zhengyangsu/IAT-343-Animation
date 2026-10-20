@@ -79,10 +79,12 @@
         content.innerHTML = `<div class="hero-wrap">${mediaMarkup(page.media, "hero-art")}</div>`;
         break;
       case "script":
-        content.innerHTML = `<article class="script-copy">
+        content.innerHTML = `<section class="script-section">
           <h2 class="content-heading">Script</h2>
-          ${page.paragraphs.map((paragraph) => `<p>${escapeHTML(paragraph)}</p>`).join("")}
-        </article>`;
+          <article class="script-copy">
+            ${page.paragraphs.map((paragraph) => `<p>${escapeHTML(paragraph)}</p>`).join("")}
+          </article>
+        </section>`;
         break;
       case "storyboard":
         content.innerHTML = `<section class="storyboard-section">

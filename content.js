@@ -9,8 +9,7 @@ window.PROJECT_CONTENT = {
   },
   pages: [
     {
-      id: "home", figmaNode: "92:2", label: "Home", title: "Robot Heist", kind: "hero",
-      media: { src: "", alt: "", label: "Home hero artwork" }
+      id: "home", figmaNode: "92:2", label: "Home", title: "Robot Heist", kind: "blog"
     },
     {
       id: "script", figmaNode: "759:5", label: "Script", title: "Script", kind: "script",

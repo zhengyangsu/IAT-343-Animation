@@ -1,5 +1,6 @@
 (() => {
   const data = window.PROJECT_CONTENT;
+  const blog = window.BLOG || { posts: [] };
   const nav = document.querySelector("#site-nav");
   const info = document.querySelector("#project-info");
   const content = document.querySelector("#page-content");
@@ -75,8 +76,21 @@
     document.title = `${page.title} — Robot Heist`;
 
     switch (page.kind) {
-      case "hero":
-        content.innerHTML = `<div class="hero-wrap">${mediaMarkup(page.media, "hero-art")}</div>`;
+      case "blog":
+        content.innerHTML = `<section class="blog-section">
+          <h2 class="content-heading">${escapeHTML(blog.title || "Blog")}</h2>
+          <p class="blog-intro">${escapeHTML(blog.intro || "")}</p>
+          <div class="blog-list">${blog.posts.map((post) => `
+            <article class="blog-post">
+              ${post.src ? mediaMarkup({ src: post.src, alt: post.alt, label: post.title }, "blog-art") : ""}
+              <div class="blog-body">
+                <p class="section-kicker">${escapeHTML([post.tag, post.date].filter(Boolean).join(" · "))}</p>
+                <h3>${escapeHTML(post.title)}</h3>
+                <p>${escapeHTML(post.text)}</p>
+                ${post.link ? `<p><a class="blog-link" href="${escapeHTML(post.link.href)}">${escapeHTML(post.link.label)} →</a></p>` : ""}
+              </div>
+            </article>`).join("")}</div>
+        </section>`;
         break;
       case "script":
         content.innerHTML = `<section class="script-section">

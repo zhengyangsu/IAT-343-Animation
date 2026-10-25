@@ -121,7 +121,9 @@
         </section>
         ${page.video ? `<section class="video-section">
           <h2 class="content-heading">${escapeHTML(page.video.title)}</h2>
-          ${videoMarkup(page.video)}
+          <div class="storyboard-board">
+            <figure class="story-frame video-frame">${videoMarkup(page.video)}</figure>
+          </div>
         </section>` : ""}`;
         break;
       case "concepts":

@@ -79,7 +79,9 @@ a { color: inherit; }
 .story-frame .media-mark { width: 25px; height: 25px; font-size: 17px; }
 .concept-section, .precedents-section { margin-bottom: clamp(28px, 4vw, 52px); }
 .storyboard-section { margin-bottom: clamp(28px, 4vw, 52px); }
-.video-embed { position: relative; width: 100%; max-width: 960px; aspect-ratio: 16 / 9; }
+.video-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; }
+/* Match the storyboard image: it is 1714×1252 and capped at 70vh tall, centered. */
+.video-frame .video-embed { max-width: calc(70vh * 1714 / 1252); margin: 0 auto; }
 .video-embed iframe { display: block; width: 100%; height: 100%; border: 0; }
 .video-fallback { display: grid; place-items: center; overflow: hidden; background: #000; }
 .video-fallback img { grid-area: 1 / 1; width: 100%; height: 100%; object-fit: cover; }

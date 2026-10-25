@@ -2,7 +2,6 @@
 
 Open `index.html` in a browser. The site uses one shared layout and switches pages with the top navigation. Page content scrolls within its own panel when it is taller than the available space.
 
-> **Note:** YouTube videos only play in place when the site is served over `http(s)`. Opened straight from the folder (`file://`), the storyboard video shows a thumbnail that links to YouTube instead. To preview locally, run `python3 -m http.server 8000` in this folder and open <http://localhost:8000>.
 
 ## Editing text
 

@@ -32,6 +32,20 @@
     </figure>`;
   }
 
+  function videoMarkup(video) {
+    const id = encodeURIComponent(video.youtubeId);
+    // YouTube embeds fail with error 153 on file:// pages (no referrer), so link out instead.
+    if (location.protocol === "file:") {
+      return `<a class="video-embed video-fallback" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer" aria-label="Watch ${escapeHTML(video.title)} on YouTube">
+        <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="">
+        <span class="video-play" aria-hidden="true">▶</span>
+      </a>`;
+    }
+    return `<div class="video-embed">
+      <iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${escapeHTML(video.title)}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>`;
+  }
+
   function renderSidebar() {
     info.innerHTML = `
       <h1>${escapeHTML(data.project.title)}</h1>
@@ -104,7 +118,11 @@
         content.innerHTML = `<section class="storyboard-section">
           <h2 class="content-heading">Pitched Storyboard</h2>
           <div class="storyboard-board">${page.frames.map((frame) => mediaMarkup(frame, "story-frame")).join("")}</div>
-        </section>`;
+        </section>
+        ${page.video ? `<section class="video-section">
+          <h2 class="content-heading">${escapeHTML(page.video.title)}</h2>
+          ${videoMarkup(page.video)}
+        </section>` : ""}`;
         break;
       case "concepts":
         content.innerHTML = renderConcepts(page);

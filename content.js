@@ -44,7 +44,8 @@ window.PROJECT_CONTENT = {
       id: "storyboard", figmaNode: "48:117", label: "Pitched Storyboard", title: "Pitched Storyboard", kind: "storyboard",
       frames: [
         { src: "assets/storyboard/StoryBoard.png", alt: "Robot Heist pitched storyboard sheet with a sequence of animatic frames, camera notes, and action descriptions.", description: "Pitched storyboard sequence showing the heist, security-bot fights, and the final flash-drive mishap.", label: "Pitched Storyboard" }
-      ]
+      ],
+      video: { title: "Storyboard Pitch", youtubeId: "S_lOCCfoRkY" }
     },
 
     {
